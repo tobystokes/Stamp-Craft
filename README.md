@@ -80,6 +80,16 @@ path. You can configure the path by setting the stampPublicRoot setting in your 
 ####Example
 
     'stampPublicRoot' => '/path/to/website/public/',
+    
+    
+Turn stamp off on a per-locale basis by setting stamp to false in your settings:
+
+    return array(
+      'local.dev' => array(
+        'devMode' => true,
+        'stamp' => false,
+      )
+    )
 
 
 Changelog
